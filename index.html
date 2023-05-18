@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" src="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Upload File</title>
+	<link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,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"/>
+	
+</head>
+<style>
+body {
+	background-image: linear-gradient(to right, #134E5E 0%, #71B280  51%, #134E5E  100%);
+	color: #000;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+	background-size: 200% auto;
+}
+
+body:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+
+.container {
+	padding: 13px;
+	padding-right: 14px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(to right, #517fa4 0%, #243949  51%, #517fa4  100%);
+	margin: 8px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;            
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	display: block;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+  }
+
+h1{
+	font-size: 30px;
+	margin-bottom: 10px;
+	color: #7474BF 0%, #348AC7  51%, #7474BF  100%;
+	
+}
+input[type=file]{
+	background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+	margin: 3px;
+	margin-top: 0%;
+	margin-left: auto;
+	padding: 5px 5px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;   
+	-moz-box-align: center;         
+	box-shadow: 0 0 20px #eee;
+	border-radius: 5px;
+	display: block;
+	font-size: 10px;
+	box-shadow: 5px 5px 10px black;
+	outline: none;
+	box-sizing: border-box;
+
+}
+::-webkit-file-upload-button{
+	background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+	color: white;
+	padding: 3px 20px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 0 1px #6b4559;
+}
+input[type=file]:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+  }
+         
+.btn-grad {
+	background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+	margin: 25px;
+	padding: 3px 3px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;            
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	display: block;
+	box-sizing: border-box;
+	margin-bottom: auto;
+	width: 10em;
+	height: 2.5em;
+  }
+
+  .btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+  }
+  .fa-sharp fa-regular fa-folders {
+	background: rgb(2,0,36);
+	background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 41%, rgba(0,212,255,1) 100%);
+  }
+
+  .foot {
+	background-image: linear-gradient(to right, #7474BF 0%, #348AC7  51%, #7474BF  100%);
+	margin: 10px 10px;
+	padding: 15px 100px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color:  #7474BF 0%, #348AC7  51%, #7474BF  100%;            
+	border-radius: 5px;
+	display: block;
+	font-size: 10px;
+	box-shadow: 5px 5px 10px black;
+	outline: none;
+	align-items: center;
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	height: 1.5rem;
+	margin-bottom: auto;
+  }
+  .foot:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+  }
+
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+    color: black;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+    
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    color:black;
+    background-color: white;
+  }
+
+  .box {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background-image: linear-gradient(to right, #134E5E 0%, #71B280  51%, #134E5E  100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.box2 {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.box2::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent,#d400d4);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+	width: 400px;
+    height: 800px;
+    background-image: conic-gradient(transparent,transparent,transparent,#ddf21f);
+    animation: animate 4s linear infinite;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.box span {
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    background: #0c1022;
+    z-index: 1;
+}
+ 
+</style>
+	
+<body >
+	<span></span>
+	<div  class="box">
+		<div class="box2">
+	<div class = "container">
+		<h1 >Sign Up!</h1>
+			<form action="fileupload" method="post" enctype="multipart/form-data">
+				<fieldset>
+					<label for="first-name">Enter Your First Name: <input id="first-name" name="firstname" type="text" placeholder = "Juan" required /></label>
+					<label for="last-name">Enter Your Last Name: <input id="last-name" name="lastname" type="text" placeholder = "Dela Cruz" required /></label>
+					<label for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder = "delacruzjuan@gmail.com" required /></label>
+					<label for="contact">Enter Your Contact No.: <input id="contact" name="contact" type="number" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"  placeholder = "09**-***-****" required /></label>
+					<label for="name"></label>
+					<br />
+					<input type="file" name="fileupload" required/>
+					<div class="inner"></div>
+					<input class="btn-grad" type="submit" value="Submit">
+					</fieldset>
+			</form>
+			
+		</div>
+		</div>
+			
+	</div>	
+	
+	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	
+</body>
+<footer class="foot">
+	Created by : @Group Kyle
+</footer>
+</html>
